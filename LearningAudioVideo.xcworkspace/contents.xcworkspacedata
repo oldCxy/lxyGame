@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:AudioVideoSDK/AudioVideoSDK.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearningAudioVideo/LearningAudioVideo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

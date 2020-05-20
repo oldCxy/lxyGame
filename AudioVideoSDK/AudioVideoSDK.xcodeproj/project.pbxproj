@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7075F0622AF774600884A46 /* AudioVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7075F0522AF774600884A46 /* AudioVideoPlayer.m */; };
+		D70F09F522BB36D4003B674C /* AudioVideoEncodeSampleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D70F09F422BB36D4003B674C /* AudioVideoEncodeSampleBase.m */; };
+		D70F09F822BB36ED003B674C /* VideoH264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D70F09F722BB36ED003B674C /* VideoH264Encoder.m */; };
+		D70F09FE22BB9C37003B674C /* VideoH264Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = D70F09FD22BB9C37003B674C /* VideoH264Configuration.m */; };
+		D72B9D7022B33900002BB02B /* VideoRecordSampleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D72B9D6F22B33900002BB02B /* VideoRecordSampleBase.m */; };
+		D72B9D7322B3393E002BB02B /* VideoFirstRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D72B9D7222B3393E002BB02B /* VideoFirstRecorder.m */; };
+		D72B9D7C22B35161002BB02B /* VideoContainerPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = D72B9D7B22B35161002BB02B /* VideoContainerPreview.m */; };
+		D72B9D7F22B3539B002BB02B /* HWVideoProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = D72B9D7E22B3539A002BB02B /* HWVideoProgress.m */; };
+		D730CC4022A7BE7B005A1709 /* AudioVideoSampleBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D730CC3F22A7BE7B005A1709 /* AudioVideoSampleBaseView.m */; };
+		D730CC4322A7BEA8005A1709 /* AudioVideoResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = D730CC4222A7BEA8005A1709 /* AudioVideoResultView.m */; };
+		D730CC4622A7BF4A005A1709 /* AudioRecordPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D730CC4522A7BF4A005A1709 /* AudioRecordPlayView.m */; };
+		D730CC4922A7C0AF005A1709 /* AudioVideoSampleBaseBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D730CC4822A7C0AF005A1709 /* AudioVideoSampleBaseBottomView.m */; };
+		D730CC4C22A7C8DC005A1709 /* MarkableProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D730CC4B22A7C8DC005A1709 /* MarkableProgressView.m */; };
+		D74DB91622A910BD00FC4EF1 /* AudioVideoAlerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D74DB91522A910BD00FC4EF1 /* AudioVideoAlerView.m */; };
+		D74DB91A22A91C0E00FC4EF1 /* AudioVideoDeviceuAthorizationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D74DB91922A91C0E00FC4EF1 /* AudioVideoDeviceuAthorizationSettings.m */; };
+		D794486D22A645B70052A0E8 /* AudioVideoSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D794486C22A645B70052A0E8 /* AudioVideoSDK.m */; };
+		D794486E22A645B70052A0E8 /* AudioVideoSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D794486B22A645B70052A0E8 /* AudioVideoSDK.h */; };
+		D794489322A64FDE0052A0E8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D794488F22A64FDE0052A0E8 /* BaseViewController.m */; };
+		D794489422A64FDE0052A0E8 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D794489122A64FDE0052A0E8 /* BaseNavigationViewController.m */; };
+		D794489722A64FF80052A0E8 /* TopNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D794489522A64FF80052A0E8 /* TopNavigationBar.m */; };
+		D7ADD67722A8F9F2003B2CCB /* AudioFirstVoiceRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ADD67622A8F9F2003B2CCB /* AudioFirstVoiceRecorder.m */; };
+		D7ADD68222A9066E003B2CCB /* AudioVideoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ADD68122A9066E003B2CCB /* AudioVideoSettings.m */; };
+		D7ADD68522A90698003B2CCB /* AudioVideoDeviceSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D7ADD68422A90698003B2CCB /* AudioVideoDeviceSettings.m */; };
+		D7BD161F22A6579F00BF5702 /* AudioVideoSampleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BD161E22A6579F00BF5702 /* AudioVideoSampleBase.m */; };
+		D7BD162322A657F400BF5702 /* AudioRecordSampleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BD162222A657F400BF5702 /* AudioRecordSampleBase.m */; };
+		D7BD162622A6585300BF5702 /* AudioRecorderFirstEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BD162522A6585300BF5702 /* AudioRecorderFirstEngine.m */; };
+		D7D7DE5C22ADF89D009E4316 /* AudioVideoPlayerSampleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D7DE5B22ADF89D009E4316 /* AudioVideoPlayerSampleBase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D794486622A645B70052A0E8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D794486E22A645B70052A0E8 /* AudioVideoSDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D7075F0422AF774600884A46 /* AudioVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoPlayer.h; sourceTree = "<group>"; };
+		D7075F0522AF774600884A46 /* AudioVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoPlayer.m; sourceTree = "<group>"; };
+		D70F09F322BB36D4003B674C /* AudioVideoEncodeSampleBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoEncodeSampleBase.h; sourceTree = "<group>"; };
+		D70F09F422BB36D4003B674C /* AudioVideoEncodeSampleBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoEncodeSampleBase.m; sourceTree = "<group>"; };
+		D70F09F622BB36ED003B674C /* VideoH264Encoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoH264Encoder.h; sourceTree = "<group>"; };
+		D70F09F722BB36ED003B674C /* VideoH264Encoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoH264Encoder.m; sourceTree = "<group>"; };
+		D70F09FA22BB8F3C003B674C /* VideoH264EncoderInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoH264EncoderInterface.h; sourceTree = "<group>"; };
+		D70F09FC22BB9C37003B674C /* VideoH264Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoH264Configuration.h; sourceTree = "<group>"; };
+		D70F09FD22BB9C37003B674C /* VideoH264Configuration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoH264Configuration.m; sourceTree = "<group>"; };
+		D72B9D6E22B33900002BB02B /* VideoRecordSampleBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoRecordSampleBase.h; sourceTree = "<group>"; };
+		D72B9D6F22B33900002BB02B /* VideoRecordSampleBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoRecordSampleBase.m; sourceTree = "<group>"; };
+		D72B9D7122B3393E002BB02B /* VideoFirstRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoFirstRecorder.h; sourceTree = "<group>"; };
+		D72B9D7222B3393E002BB02B /* VideoFirstRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoFirstRecorder.m; sourceTree = "<group>"; };
+		D72B9D7A22B35161002BB02B /* VideoContainerPreview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoContainerPreview.h; sourceTree = "<group>"; };
+		D72B9D7B22B35161002BB02B /* VideoContainerPreview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoContainerPreview.m; sourceTree = "<group>"; };
+		D72B9D7D22B3539A002BB02B /* HWVideoProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWVideoProgress.h; sourceTree = "<group>"; };
+		D72B9D7E22B3539A002BB02B /* HWVideoProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWVideoProgress.m; sourceTree = "<group>"; };
+		D730CC3D22A7B474005A1709 /* AudioVideoSampleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoSampleProtocol.h; sourceTree = "<group>"; };
+		D730CC3E22A7BE7B005A1709 /* AudioVideoSampleBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoSampleBaseView.h; sourceTree = "<group>"; };
+		D730CC3F22A7BE7B005A1709 /* AudioVideoSampleBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoSampleBaseView.m; sourceTree = "<group>"; };
+		D730CC4122A7BEA8005A1709 /* AudioVideoResultView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoResultView.h; sourceTree = "<group>"; };
+		D730CC4222A7BEA8005A1709 /* AudioVideoResultView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoResultView.m; sourceTree = "<group>"; };
+		D730CC4422A7BF4A005A1709 /* AudioRecordPlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioRecordPlayView.h; sourceTree = "<group>"; };
+		D730CC4522A7BF4A005A1709 /* AudioRecordPlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioRecordPlayView.m; sourceTree = "<group>"; };
+		D730CC4722A7C0AF005A1709 /* AudioVideoSampleBaseBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoSampleBaseBottomView.h; sourceTree = "<group>"; };
+		D730CC4822A7C0AF005A1709 /* AudioVideoSampleBaseBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoSampleBaseBottomView.m; sourceTree = "<group>"; };
+		D730CC4A22A7C8DC005A1709 /* MarkableProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkableProgressView.h; sourceTree = "<group>"; };
+		D730CC4B22A7C8DC005A1709 /* MarkableProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkableProgressView.m; sourceTree = "<group>"; };
+		D730CC4D22A7DD90005A1709 /* AudioVideoSampleBaseViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoSampleBaseViewProtocol.h; sourceTree = "<group>"; };
+		D74DB91422A910BD00FC4EF1 /* AudioVideoAlerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoAlerView.h; sourceTree = "<group>"; };
+		D74DB91522A910BD00FC4EF1 /* AudioVideoAlerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoAlerView.m; sourceTree = "<group>"; };
+		D74DB91822A91C0E00FC4EF1 /* AudioVideoDeviceuAthorizationSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoDeviceuAthorizationSettings.h; sourceTree = "<group>"; };
+		D74DB91922A91C0E00FC4EF1 /* AudioVideoDeviceuAthorizationSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoDeviceuAthorizationSettings.m; sourceTree = "<group>"; };
+		D794486822A645B70052A0E8 /* libAudioVideoSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAudioVideoSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D794486B22A645B70052A0E8 /* AudioVideoSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoSDK.h; sourceTree = "<group>"; };
+		D794486C22A645B70052A0E8 /* AudioVideoSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoSDK.m; sourceTree = "<group>"; };
+		D794488F22A64FDE0052A0E8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D794489022A64FDE0052A0E8 /* BaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
+		D794489122A64FDE0052A0E8 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		D794489222A64FDE0052A0E8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D794489522A64FF80052A0E8 /* TopNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopNavigationBar.m; sourceTree = "<group>"; };
+		D794489622A64FF80052A0E8 /* TopNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopNavigationBar.h; sourceTree = "<group>"; };
+		D7ADD67522A8F9F2003B2CCB /* AudioFirstVoiceRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioFirstVoiceRecorder.h; sourceTree = "<group>"; };
+		D7ADD67622A8F9F2003B2CCB /* AudioFirstVoiceRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioFirstVoiceRecorder.m; sourceTree = "<group>"; };
+		D7ADD68022A9066E003B2CCB /* AudioVideoSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoSettings.h; sourceTree = "<group>"; };
+		D7ADD68122A9066E003B2CCB /* AudioVideoSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoSettings.m; sourceTree = "<group>"; };
+		D7ADD68322A90698003B2CCB /* AudioVideoDeviceSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoDeviceSettings.h; sourceTree = "<group>"; };
+		D7ADD68422A90698003B2CCB /* AudioVideoDeviceSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoDeviceSettings.m; sourceTree = "<group>"; };
+		D7BD161D22A6579F00BF5702 /* AudioVideoSampleBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoSampleBase.h; sourceTree = "<group>"; };
+		D7BD161E22A6579F00BF5702 /* AudioVideoSampleBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoSampleBase.m; sourceTree = "<group>"; };
+		D7BD162122A657F400BF5702 /* AudioRecordSampleBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioRecordSampleBase.h; sourceTree = "<group>"; };
+		D7BD162222A657F400BF5702 /* AudioRecordSampleBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioRecordSampleBase.m; sourceTree = "<group>"; };
+		D7BD162422A6585300BF5702 /* AudioRecorderFirstEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioRecorderFirstEngine.h; sourceTree = "<group>"; };
+		D7BD162522A6585300BF5702 /* AudioRecorderFirstEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioRecorderFirstEngine.m; sourceTree = "<group>"; };
+		D7D7DE5A22ADF89D009E4316 /* AudioVideoPlayerSampleBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioVideoPlayerSampleBase.h; sourceTree = "<group>"; };
+		D7D7DE5B22ADF89D009E4316 /* AudioVideoPlayerSampleBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioVideoPlayerSampleBase.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D794486522A645B70052A0E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D70F09F922BB8DA5003B674C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D730CC3D22A7B474005A1709 /* AudioVideoSampleProtocol.h */,
+				D730CC4D22A7DD90005A1709 /* AudioVideoSampleBaseViewProtocol.h */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		D70F09FB22BB8FFB003B674C /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				D70F09FC22BB9C37003B674C /* VideoH264Configuration.h */,
+				D70F09FD22BB9C37003B674C /* VideoH264Configuration.m */,
+			);
+			name = Options;
+			sourceTree = "<group>";
+		};
+		D72B9D6922B33633002BB02B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D72B9D6E22B33900002BB02B /* VideoRecordSampleBase.h */,
+				D72B9D6F22B33900002BB02B /* VideoRecordSampleBase.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		D72B9D6A22B33639002BB02B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D72B9D7D22B3539A002BB02B /* HWVideoProgress.h */,
+				D72B9D7E22B3539A002BB02B /* HWVideoProgress.m */,
+				D72B9D7A22B35161002BB02B /* VideoContainerPreview.h */,
+				D72B9D7B22B35161002BB02B /* VideoContainerPreview.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D72B9D6B22B33645002BB02B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D72B9D7122B3393E002BB02B /* VideoFirstRecorder.h */,
+				D72B9D7222B3393E002BB02B /* VideoFirstRecorder.m */,
+				D70F09F622BB36ED003B674C /* VideoH264Encoder.h */,
+				D70F09F722BB36ED003B674C /* VideoH264Encoder.m */,
+				D70F09FA22BB8F3C003B674C /* VideoH264EncoderInterface.h */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		D72B9D9122B3A157002BB02B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D7ADD67522A8F9F2003B2CCB /* AudioFirstVoiceRecorder.h */,
+				D7ADD67622A8F9F2003B2CCB /* AudioFirstVoiceRecorder.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		D74DB91322A9103200FC4EF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D74DB91422A910BD00FC4EF1 /* AudioVideoAlerView.h */,
+				D74DB91522A910BD00FC4EF1 /* AudioVideoAlerView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D74DB91722A91A1700FC4EF1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D7BD162122A657F400BF5702 /* AudioRecordSampleBase.h */,
+				D7BD162222A657F400BF5702 /* AudioRecordSampleBase.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		D794485F22A645B70052A0E8 = {
+			isa = PBXGroup;
+			children = (
+				D794486A22A645B70052A0E8 /* AudioVideoSDK */,
+				D794486922A645B70052A0E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D794486922A645B70052A0E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D794486822A645B70052A0E8 /* libAudioVideoSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D794486A22A645B70052A0E8 /* AudioVideoSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D7BD162022A657A700BF5702 /* SampleBase */,
+				D794488B22A64F6B0052A0E8 /* BaseController */,
+				D794487522A645DB0052A0E8 /* Video */,
+				D794487422A645BE0052A0E8 /* Audio */,
+				D794486B22A645B70052A0E8 /* AudioVideoSDK.h */,
+				D794486C22A645B70052A0E8 /* AudioVideoSDK.m */,
+			);
+			path = AudioVideoSDK;
+			sourceTree = "<group>";
+		};
+		D794487422A645BE0052A0E8 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				D72B9D9122B3A157002BB02B /* Tools */,
+				D74DB91722A91A1700FC4EF1 /* Base */,
+				D7BD162722A66BD700BF5702 /* Views */,
+				D7BD162422A6585300BF5702 /* AudioRecorderFirstEngine.h */,
+				D7BD162522A6585300BF5702 /* AudioRecorderFirstEngine.m */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		D794487522A645DB0052A0E8 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				D70F09FB22BB8FFB003B674C /* Options */,
+				D72B9D6B22B33645002BB02B /* Tools */,
+				D72B9D6A22B33639002BB02B /* Views */,
+				D72B9D6922B33633002BB02B /* Base */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		D794488B22A64F6B0052A0E8 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				D794489622A64FF80052A0E8 /* TopNavigationBar.h */,
+				D794489522A64FF80052A0E8 /* TopNavigationBar.m */,
+				D794489022A64FDE0052A0E8 /* BaseNavigationViewController.h */,
+				D794489122A64FDE0052A0E8 /* BaseNavigationViewController.m */,
+				D794489222A64FDE0052A0E8 /* BaseViewController.h */,
+				D794488F22A64FDE0052A0E8 /* BaseViewController.m */,
+			);
+			name = BaseController;
+			sourceTree = "<group>";
+		};
+		D7ADD66422A8AF9D003B2CCB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D730CC3E22A7BE7B005A1709 /* AudioVideoSampleBaseView.h */,
+				D730CC3F22A7BE7B005A1709 /* AudioVideoSampleBaseView.m */,
+				D730CC4122A7BEA8005A1709 /* AudioVideoResultView.h */,
+				D730CC4222A7BEA8005A1709 /* AudioVideoResultView.m */,
+				D730CC4722A7C0AF005A1709 /* AudioVideoSampleBaseBottomView.h */,
+				D730CC4822A7C0AF005A1709 /* AudioVideoSampleBaseBottomView.m */,
+				D730CC4A22A7C8DC005A1709 /* MarkableProgressView.h */,
+				D730CC4B22A7C8DC005A1709 /* MarkableProgressView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D7ADD66522A8AFD8003B2CCB /* CoreBase */ = {
+			isa = PBXGroup;
+			children = (
+				D7BD161D22A6579F00BF5702 /* AudioVideoSampleBase.h */,
+				D7BD161E22A6579F00BF5702 /* AudioVideoSampleBase.m */,
+				D7ADD68022A9066E003B2CCB /* AudioVideoSettings.h */,
+				D7ADD68122A9066E003B2CCB /* AudioVideoSettings.m */,
+				D7D7DE5A22ADF89D009E4316 /* AudioVideoPlayerSampleBase.h */,
+				D7D7DE5B22ADF89D009E4316 /* AudioVideoPlayerSampleBase.m */,
+				D7075F0422AF774600884A46 /* AudioVideoPlayer.h */,
+				D7075F0522AF774600884A46 /* AudioVideoPlayer.m */,
+				D70F09F322BB36D4003B674C /* AudioVideoEncodeSampleBase.h */,
+				D70F09F422BB36D4003B674C /* AudioVideoEncodeSampleBase.m */,
+			);
+			name = CoreBase;
+			sourceTree = "<group>";
+		};
+		D7ADD67F22A9063B003B2CCB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D74DB91322A9103200FC4EF1 /* Views */,
+				D7ADD68322A90698003B2CCB /* AudioVideoDeviceSettings.h */,
+				D7ADD68422A90698003B2CCB /* AudioVideoDeviceSettings.m */,
+				D74DB91822A91C0E00FC4EF1 /* AudioVideoDeviceuAthorizationSettings.h */,
+				D74DB91922A91C0E00FC4EF1 /* AudioVideoDeviceuAthorizationSettings.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		D7BD162022A657A700BF5702 /* SampleBase */ = {
+			isa = PBXGroup;
+			children = (
+				D70F09F922BB8DA5003B674C /* Protocol */,
+				D7ADD66522A8AFD8003B2CCB /* CoreBase */,
+				D7ADD67F22A9063B003B2CCB /* Tools */,
+				D7ADD66422A8AF9D003B2CCB /* Views */,
+			);
+			name = SampleBase;
+			sourceTree = "<group>";
+		};
+		D7BD162722A66BD700BF5702 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D730CC4422A7BF4A005A1709 /* AudioRecordPlayView.h */,
+				D730CC4522A7BF4A005A1709 /* AudioRecordPlayView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D794486722A645B70052A0E8 /* AudioVideoSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D794487122A645B70052A0E8 /* Build configuration list for PBXNativeTarget "AudioVideoSDK" */;
+			buildPhases = (
+				D794486422A645B70052A0E8 /* Sources */,
+				D794486522A645B70052A0E8 /* Frameworks */,
+				D794486622A645B70052A0E8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioVideoSDK;
+			productName = AudioVideoSDK;
+			productReference = D794486822A645B70052A0E8 /* libAudioVideoSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D794486022A645B70052A0E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = tutu;
+				TargetAttributes = {
+					D794486722A645B70052A0E8 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = D794486322A645B70052A0E8 /* Build configuration list for PBXProject "AudioVideoSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D794485F22A645B70052A0E8;
+			productRefGroup = D794486922A645B70052A0E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D794486722A645B70052A0E8 /* AudioVideoSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D794486422A645B70052A0E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D794486D22A645B70052A0E8 /* AudioVideoSDK.m in Sources */,
+				D794489722A64FF80052A0E8 /* TopNavigationBar.m in Sources */,
+				D70F09FE22BB9C37003B674C /* VideoH264Configuration.m in Sources */,
+				D74DB91A22A91C0E00FC4EF1 /* AudioVideoDeviceuAthorizationSettings.m in Sources */,
+				D70F09F522BB36D4003B674C /* AudioVideoEncodeSampleBase.m in Sources */,
+				D730CC4322A7BEA8005A1709 /* AudioVideoResultView.m in Sources */,
+				D70F09F822BB36ED003B674C /* VideoH264Encoder.m in Sources */,
+				D7BD162622A6585300BF5702 /* AudioRecorderFirstEngine.m in Sources */,
+				D730CC4C22A7C8DC005A1709 /* MarkableProgressView.m in Sources */,
+				D7BD161F22A6579F00BF5702 /* AudioVideoSampleBase.m in Sources */,
+				D7075F0622AF774600884A46 /* AudioVideoPlayer.m in Sources */,
+				D794489422A64FDE0052A0E8 /* BaseNavigationViewController.m in Sources */,
+				D72B9D7022B33900002BB02B /* VideoRecordSampleBase.m in Sources */,
+				D72B9D7322B3393E002BB02B /* VideoFirstRecorder.m in Sources */,
+				D74DB91622A910BD00FC4EF1 /* AudioVideoAlerView.m in Sources */,
+				D7ADD68222A9066E003B2CCB /* AudioVideoSettings.m in Sources */,
+				D72B9D7C22B35161002BB02B /* VideoContainerPreview.m in Sources */,
+				D7D7DE5C22ADF89D009E4316 /* AudioVideoPlayerSampleBase.m in Sources */,
+				D7BD162322A657F400BF5702 /* AudioRecordSampleBase.m in Sources */,
+				D730CC4022A7BE7B005A1709 /* AudioVideoSampleBaseView.m in Sources */,
+				D730CC4622A7BF4A005A1709 /* AudioRecordPlayView.m in Sources */,
+				D7ADD67722A8F9F2003B2CCB /* AudioFirstVoiceRecorder.m in Sources */,
+				D730CC4922A7C0AF005A1709 /* AudioVideoSampleBaseBottomView.m in Sources */,
+				D794489322A64FDE0052A0E8 /* BaseViewController.m in Sources */,
+				D7ADD68522A90698003B2CCB /* AudioVideoDeviceSettings.m in Sources */,
+				D72B9D7F22B3539B002BB02B /* HWVideoProgress.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D794486F22A645B70052A0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D794487022A645B70052A0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D794487222A645B70052A0E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9U2KRZU6GT;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D794487322A645B70052A0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9U2KRZU6GT;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D794486322A645B70052A0E8 /* Build configuration list for PBXProject "AudioVideoSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D794486F22A645B70052A0E8 /* Debug */,
+				D794487022A645B70052A0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D794487122A645B70052A0E8 /* Build configuration list for PBXNativeTarget "AudioVideoSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D794487222A645B70052A0E8 /* Debug */,
+				D794487322A645B70052A0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D794486022A645B70052A0E8 /* Project object */;
+}
